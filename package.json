@@ -1,0 +1,16 @@
+{
+  "name": "partframework_prj",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@partFramework/cli": "^1.0.0-alpha.1",
+    "express": "^5.1.0",
+    "partFramework": "^10.24.4"
+  }
+}

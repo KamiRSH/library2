@@ -1,0 +1,41 @@
+
+[INFO] 2025-10-12T15:03:31.706000000Z  module  partFramework@loader
+└─> path: EventEmitter.<anonymous> (/home/Kamyar/coding/partFramework_prj/node_modules/@partFramework/core/main.js:162:23)
+└─> msg_id: 9428c5bc-fe8c-408d-bfeb-d8372d7d3578
+└─> Load Local Configs - configs dir loaded successfully!
+[INFO] 2025-10-12T15:03:44.970000000Z  module  partFramework@router
+└─> path: EventEmitter.<anonymous> (/home/Kamyar/coding/partFramework_prj/node_modules/@partFramework/core/main.js:219:23)
+└─> msg_id: a6e153bc-ae2b-467c-8fa5-897f50599e7a
+└─> @partFramework/router successfully initialized
+[INFO] 2025-10-12T19:20:46.113000000Z  module  partFramework@loader
+└─> path: EventEmitter.<anonymous> (/home/Kamyar/coding/partFramework_prj/node_modules/@partFramework/core/main.js:162:23)
+└─> msg_id: df638974-c539-482c-9008-f4ce3533b6cf
+└─> Load Local Configs - configs dir loaded successfully!
+[INFO] 2025-10-12T19:20:58.251000000Z  module  partFramework@router
+└─> path: EventEmitter.<anonymous> (/home/Kamyar/coding/partFramework_prj/node_modules/@partFramework/core/main.js:219:23)
+└─> msg_id: f0df09dc-004e-47bc-9bc3-cd875ec92dfd
+└─> @partFramework/router successfully initialized
+[INFO] 2025-10-12T19:23:04.194000000Z  module  partFramework@loader
+└─> path: EventEmitter.<anonymous> (/home/Kamyar/coding/partFramework_prj/node_modules/@partFramework/core/main.js:162:23)
+└─> msg_id: a4f40c40-2850-4a40-bd1d-160aa5cca754
+└─> Load Local Configs - configs dir loaded successfully!
+[INFO] 2025-10-12T19:23:21.248000000Z  module  partFramework@router
+└─> path: EventEmitter.<anonymous> (/home/Kamyar/coding/partFramework_prj/node_modules/@partFramework/core/main.js:219:23)
+└─> msg_id: 1bfdf6d7-2248-421c-a8a9-f96199023aa3
+└─> @partFramework/router successfully initialized
+[INFO] 2025-10-12T19:25:52.830000000Z  module  partFramework@loader
+└─> path: EventEmitter.<anonymous> (/home/Kamyar/coding/partFramework_prj/node_modules/@partFramework/core/main.js:162:23)
+└─> msg_id: 9efa009e-c956-4a60-a6df-eb745d4162b2
+└─> Load Local Configs - configs dir loaded successfully!
+[INFO] 2025-10-12T19:26:04.237000000Z  module  partFramework@router
+└─> path: EventEmitter.<anonymous> (/home/Kamyar/coding/partFramework_prj/node_modules/@partFramework/core/main.js:219:23)
+└─> msg_id: b30d0ef4-40e4-4db5-817e-a5aeb51ab043
+└─> @partFramework/router successfully initialized
+[INFO] 2025-10-12T19:49:18.016000000Z  module  partFramework@loader
+└─> path: EventEmitter.<anonymous> (/home/Kamyar/coding/partFramework_prj/node_modules/@partFramework/core/main.js:162:23)
+└─> msg_id: f2c1b1d6-e320-4ec6-ae62-c29aa6e5c16f
+└─> Load Local Configs - configs dir loaded successfully!
+[INFO] 2025-10-12T19:49:28.668000000Z  module  partFramework@router
+└─> path: EventEmitter.<anonymous> (/home/Kamyar/coding/partFramework_prj/node_modules/@partFramework/core/main.js:219:23)
+└─> msg_id: 68f457b4-1875-49de-a108-e4a8eb47e4cb
+└─> @partFramework/router successfully initialized

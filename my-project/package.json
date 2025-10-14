@@ -1,0 +1,14 @@
+{
+  "name": "my-project",
+  "version": "1.0.0-alpha.0",
+  "description": "new project with partFramework@10",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "dependencies": {
+    "@partFramework/http": "^1.0.0",
+    "partFramework": "^10.2.0"
+  }
+}
