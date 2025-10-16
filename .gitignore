@@ -3,5 +3,5 @@ logs/
 
 test_file.js
 
-repo/books.json
-repo/users.json
+my-project/repo/books.json
+my-project/repo/users.json
