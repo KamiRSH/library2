@@ -1,4 +1,5 @@
-const randomInt = require("node:crypto")
+// const randomInt = require("node:crypto")
+const crypto = require("node:crypto")
 
 class Tools{
     constructor() {
@@ -9,8 +10,8 @@ class Tools{
     }
 
     generate16digits(){
-        const part1 = randomInt(10 ** 7, 10 ** 8 - 1)
-        const part2 = randomInt(10 ** 7, 10 ** 8 - 1)
+        const part1 = crypto.randomInt(10 ** 7, 10 ** 8 - 1)
+        const part2 = crypto.randomInt(10 ** 7, 10 ** 8 - 1)
         return Number(part1.toString() + part2.toString())
     }
 
