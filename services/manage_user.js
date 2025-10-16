@@ -1,7 +1,5 @@
-// import { FileSys } from "../repo/file_system.js"
 const DTO = require("../model.js")
 const Tools = require("./tools.js")
-// const fileSys = new FileSys()
 const dto = new DTO()
 const tools = new Tools()
 
@@ -21,18 +19,6 @@ class ManageUser{
         dto.objUsers_to_jFile(this.usersLi)     // resetting tokens
     }
 
-    signUp_userGiveID(detail, file){
-        for (const i of Object.values(file))
-            if (i["id"] == detail["id"] || i["email"] == detail["email"]){
-
-                
-                return [file, "your user already exist;\nplease sign in"]
-            }
-        file[Object.keys(file).length + 1] = detail
-        fileSys.write("./repo/users.json", file)
-        return [file, `user id: ${detail["id"]} successfully added;\nnow you can sign in`]
-    }
-
     signUp(objUser){
         for(const i of this.usersLi){
             if(i.phone == objUser.phone){
@@ -50,7 +36,7 @@ class ManageUser{
         }   
         this.usersLi.push(objUser)
         dto.objUsers_to_jFile(this.usersLi)
-        console.log(this.usersLi)
+        // console.log(this.usersLi)
         return objUser
     }
 
@@ -91,11 +77,6 @@ class ManageUser{
                     if(detail[i]){
                         this.usersLi[index][i] = detail[i]
                     }
-                    // console.log(i)
-                    // console.log(this.usersLi[index][i])
-                    // console.log(detail)
-                    // console.log(detail[i])
-                    // console.log(this.usersLi[index])
                 }
                 dto.objUsers_to_jFile(this.usersLi)
                 return "your info successfully updated:"
