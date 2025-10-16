@@ -6,13 +6,5 @@
         "publishYear": 1990,
         "price": 800,
         "stock": null
-    },
-    {
-        "id": 2,
-        "title": "zaban",
-        "author": "Fazilat",
-        "publishYear": 2050,
-        "price": 10000,
-        "stock": null
     }
 ]
