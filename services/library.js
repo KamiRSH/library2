@@ -1,10 +1,8 @@
-const FileSys = require("../repo/file_system.js")
 const DTO = require("../model.js")
 const Tools = require("./tools.js")
 const ManageUser = require("./manage_user.js")
 
 const dto = new DTO()
-// const fileSys = new FileSys()
 const tools = new Tools()
 const userManager = new ManageUser
 
@@ -52,7 +50,6 @@ class Library{
             detail.stock = true
             this.booksLi.push(detail)
             dto.objBooks_to_jFile(this.booksLi)
-            // fileSys.write("./repo/books.json", this.booksLi)
             return `your book with id ${detail.id} successfully added`
         }else{
             return "make sure you are admin and you entered your token correctly"
@@ -70,7 +67,6 @@ class Library{
                     }                    
                 }
                 dto.objBooks_to_jFile(this.booksLi)
-                // fileSys.write("repo/books.json", this.booksLi)
                 return "the books info successfully updated:"
             }else{
                 return `couldn't find the book with id ${id}`
@@ -87,7 +83,6 @@ class Library{
             if(index != -1){
                 this.booksLi.splice(index, 1)
                 dto.objBooks_to_jFile(this.booksLi)
-                // fileSys.write("./repo/books.json", this.booksLi)
                 return `the book with id ${id} successfully deleted`
             }else{
                 return `the book with id ${id} doesn't exist`
