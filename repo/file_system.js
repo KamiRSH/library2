@@ -1,4 +1,4 @@
-const constants = require("fs")
+// const fs1 = require("fs")
 const fs = require("fs/promises")
 
 class FileSys{
@@ -38,21 +38,18 @@ class FileSys{
 
   async exist(fileName){
     try{
-        await fs.access(fileName, constants.F_OK)
-        // return true
+        await fs.access(fileName, fs.constants.F_OK)
     }catch(err){
         await fs.writeFile(fileName, JSON.stringify([]))
-        // return false
     }
   }
 
 }
-console.log(100)
-const fileSys = new FileSys();
-(async () => {
-    console.log(200)
-    await fileSys.exist("./repo/users.json")
-    await fileSys.exist("./repo/books.json")
-})();
+
+// const fileSys = new FileSys();
+// (async () => {
+//     await fileSys.exist("./repo/users.json")
+//     await fileSys.exist("./repo/books.json")
+// })();
 
 module.exports = FileSys;
