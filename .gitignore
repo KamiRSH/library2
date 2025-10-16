@@ -1,5 +1,7 @@
 node_modules/
 logs/
+my-project/controllers/myController/main.transpiled.min.js
+my-project/controllers/myController/main.transpiled.min.js.map
 
 test_file.js
 
