@@ -1,8 +1,8 @@
 const Controller = require('@partFramework/baseController');
-const DTO = require('../../../model')
-const Core = require('../../../core')
+const DTO = require('../../model')
+const Cores = require('../../core')
 const dto = new DTO()
-const core = new Core()
+const core = new Cores.Core();
 
 exports.controller = class SampleController extends Controller {
   httpGet(){
