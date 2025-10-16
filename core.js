@@ -1,21 +1,38 @@
-console.log(0)
 const Library = require("./services/library.js")
-console.log(1)
 const ManageUser = require("./services/manage_user.js")
-console.log(2)
 const Tools = require("./services/tools.js")
-console.log(3)
 // const userManager = new ManageUser(dto.jFile_to_objUsers("./repo/users.json"))
 // const library = new Library(dto.jFile_to_objBooks("./repo/books.json"))
 const userManager = new ManageUser()
 const library = new Library()
 const tools = new Tools();
 
-(async () => {
+const FileSys = require("./repo/file_system.js")
+const fileSys = new FileSys();
+
+async function beginning(){
+    // console.log("usr.jsn")
+    await fileSys.exist("./repo/users.json")
+    // console.log("bk.jsn")
+    await fileSys.exist("./repo/books.json")
+
     await userManager.init()
     await library.init()
-})();
-console.log("Hiiiiiiiiiii")
+};
+
+// (async () => {
+//     console.log("usr.jsn")
+//     await fileSys.exist("./repo/users.json")
+// })();
+// (async () => {
+//     console.log("bk.jsn")
+//     await fileSys.exist("./repo/books.json")
+// })();
+
+// (async () => {
+//     await userManager.init()
+//     await library.init()
+// })();
 
 class Core{
     constructor(){
@@ -82,7 +99,10 @@ class Core{
     }
 }
 
-module.exports = Core;
+module.exports = {
+    Core,
+    beginning
+};
 
 
 // // users APIs
