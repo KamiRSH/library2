@@ -1,4 +1,7 @@
-test_file.js
 node_modules/
+logs/
+
+test_file.js
+
 repo/books.json
 repo/users.json
