@@ -1,6 +1,6 @@
-import express from "express"
-import { DTO } from "./model.js"    // aval code haye dakhele model bayad khande she bad code haye core (baraye tartib exist va read
-import { Core } from "./core.js"
+const express = require("express")
+const DTO = require("./model.js")    // aval code haye dakhele model bayad khande she bad code haye core (baraye tartib exist va read
+const Core = require("./core.js")
 const dto = new DTO()
 const core = new Core()
 
