@@ -1,8 +1,12 @@
 const express = require("express")
 const DTO = require("./model.js")    // aval code haye dakhele model bayad khande she bad code haye core (baraye tartib exist va read
-const Core = require("./core.js")
+const Cores = require("./core.js")
 const dto = new DTO()
-const core = new Core()
+const core = new Cores.Core();
+
+(async () => {
+    await Cores.beginning()
+})();
 
 const app = express()
 app.use(express.json())
