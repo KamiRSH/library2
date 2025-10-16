@@ -11,4 +11,4 @@ const env = process.env.MODE || process.env.mode || 'dev';
 
   const program = new Program(projectConfig[env]);
   await program.run();
-})();
+})();   //don't forget to run with sudo!
